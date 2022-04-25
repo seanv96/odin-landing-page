@@ -43,12 +43,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*Nav*/
-header {
-    background-color: #1F2937;
-    padding: 50px;
+/*Common*/
+.subtext,
+nav a {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
 }
 
+/*Header*/
+header {
+    background-color: #1F2937;
+    padding: 20px 160px;
+}
+
+/*Nav*/
 nav {
     display: flex;
     align-items: baseline;
@@ -57,7 +66,7 @@ nav {
 
 nav h2 {
     font-size: 24px;
-    font-weight: 900;
+    font-weight: bold;
     color: #F9FAF8;
 }
 
@@ -66,10 +75,38 @@ nav ul {
     gap: 20px;
 }
 
-nav a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #E5E7EB;
-}
+nav a {}
 
 /*Welcome*/
+.welcome {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.welcome .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.welcome .right {
+    display: flex;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.welcome button {
+    background-color: #3882F6;
+    border: none;
+    width: 160px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
